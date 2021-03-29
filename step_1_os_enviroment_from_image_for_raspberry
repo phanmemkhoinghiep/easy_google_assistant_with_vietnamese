@@ -1,7 +1,6 @@
-### ĐÂY LÀ HƯỚNG DẪN CÀI ĐẶT PHẦN HỆ ĐIỀU HÀNH, THƯ VIỆN, DRIVER
+### ĐÂY LÀ HƯỚNG DẪN CÀI ĐẶT PHẦN HỆ ĐIỀU HÀNH, THƯ VIỆN, DRIVER SỬ DỤNG IMAGE CÓ SẴN
 
-### STEP0. Cài đặt nhanh (Bỏ qua Step1 đến Step5)
-Các bạn không muốn trải nghiệm quá trình cài đặt từ Step1 đến Step5, có thể thực hiện theo các bước sau
+### STEP0 IMAGE RASPBIAN
 
 0.1. Download bộ Image đã cài đặt sẵn tất cả các bước theo link sau:
 ```sh
@@ -21,3 +20,6 @@ https://drive.google.com/file/d/1kvquheNqf9zwObHwCFxWP_HtK-hPQh48/view?usp=shari
 
 0.6. Username và password đăng nhập theo mặc định của raspbian (pi/raspberry)
 
+### STEP1 IMAGE ORANGE PI ZERO
+
+Đang Edit
