@@ -3,8 +3,8 @@ import json
 data = {}
 data['mic'] = []
 data['mic'].append({
-    'type': 'basic USB',
-    'is_active': False        
+    'type': 'None Respeaker Mic',
+    'is_active': True        
 })
 data['mic'].append({
     'type': 'ReSpeaker 2/4-Mics Pi HAT',
@@ -12,7 +12,7 @@ data['mic'].append({
 })
 data['mic'].append({
     'type': 'ReSpeaker Mic Array v2.0',
-    'is_active': True        
+    'is_active': False        
 })
 data['mic'].append({
     'type': 'ReSpeaker Core v2.0',
