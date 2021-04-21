@@ -141,10 +141,10 @@ Sau khi khởi chạy, hệ thống sẽ tạo một thư mục có file là dev
 ```
 ### STEP4. Kết thúc
 
-6.1. Có thể chạy Google Assistant bằng lệnh:
+4.1. Nếu không dùng Mic Respeaker thì có thể chạy Google Assistant bằng lệnh:
 
 ```sh
 cd /home/pi/easy_google_assistant_with_vietnamese/src
 python3 start.py
 ```
-với project_id và device_model_id là giá trị đã lưu lại khi khởi tạo project
+4.2. Nếu dùng Mic Respeaker thì chuyển sang Step 4
