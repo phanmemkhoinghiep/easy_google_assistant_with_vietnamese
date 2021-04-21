@@ -144,6 +144,7 @@ Sau khi khởi chạy, hệ thống sẽ tạo một thư mục có file là dev
 6.1. Có thể chạy Google Assistant bằng lệnh:
 
 ```sh
-python3 googlesamples-assistant-pushtotalk --project-id ten_project --device-model-id ten_device_id
+cd /home/pi/easy_google_assistant_with_vietnamese/src
+python3 start.py
 ```
 với project_id và device_model_id là giá trị đã lưu lại khi khởi tạo project
