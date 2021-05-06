@@ -1,25 +1,47 @@
-### ĐÂY LÀ HƯỚNG DẪN CÀI ĐẶT PHẦN HỆ ĐIỀU HÀNH, THƯ VIỆN, DRIVER SỬ DỤNG IMAGE CÓ SẴN
+### ĐÂY LÀ HƯỚNG DẪN CÀI ĐẶT PHẦN HỆ ĐIỀU HÀNH, THƯ VIỆN, DRIVER CHO PI ZERO WIRLESS, MODUN 2 MIC HAT, 4 MIC ARRAY HOẶC MIC USB TỪ IMAGE CÓ SẴN
 
-### STEP0 IMAGE RASPBIAN
+### STEP1. Download bộ Image cho Raspberry Pi đã cài đặt sẵn
 
-0.1. Download bộ Image đã cài đặt sẵn tất cả các bước theo link sau:
+1.1. Download bộ Image cho Raspberry Pi đã cài đặt sẵn cho Respeaker 2 Mic Hat
+
 ```sh
 https://www.fshare.vn/file/A7S8F7D2TR52
 ```
-hoặc
+
+1.2. Download bộ Image cho Raspberry Pi đã cài đặt sẵn cho Respeaker USB Mic
 ```sh
-https://drive.google.com/file/d/1kvquheNqf9zwObHwCFxWP_HtK-hPQh48/view?usp=sharing
+https://www.fshare.vn/file/P32O1QFLF3X3
+
 ```
-0.2. Sử dụng Win32Img để ghi vào thẻ SD 8GB trở lên
+### STEP2. Ghi vào thẻ SD
 
-0.3. Khai báo file wpa_supplicant.conf như hướng dẫn tại Bước 1.3.
+2.1. Dùng Win32IMG để ghi vào thẻ nhớ SD
 
-0.4. Cắm thẻ nhớ vào Pi Zero W và boot lên
+### STEP3. Khai báo WiFi
 
-0.5. Sử dụng SSH để truy cập từ xa vào Console
+3.1. Sử dụng Notepad ++ để tạo file có tên là wpa-supplicant.conf trong thư mục boot của thẻ nhớ
 
-0.6. Username và password đăng nhập theo mặc định của raspbian (pi/raspberry)
+3.2. Set định dạng File
+Định dạng file Unix (Edit -> EOL converion -> UNIX/OSX Format là Unix (LF)), nội dung là các tham số tên SSID và mật khẩu tương ứng
 
-### STEP1 IMAGE ORANGE PI ZERO
+3.3. Đặt nội dung
+Chú ý, tham số country có thể đổi sang us hoặc vn tùy theo cài đặt tại bộ phát WiFi
+```sh
+country=vn
+update_config=1
+ctrl_interface=/var/run/wpa_supplicant
+network={
+    ssid="testing"
+    psk="testingPassword"
+}
+```
+3.4. Save lại nội dung File
 
-Đang Edit
+### STEP4. Truy cập
+
+4.1. Cắm thẻ nhớ vào Pi Zero W và boot lên
+
+4.2. Sử dụng SSH để truy cập từ xa vào Console
+
+4.3. Username và password đăng nhập theo mặc định của raspbian (pi/raspberry)
+
