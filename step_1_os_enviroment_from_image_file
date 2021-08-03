@@ -19,7 +19,7 @@ https://www.fshare.vn/file/P32O1QFLF3X3
 
 ### STEP3. Khai báo WiFi
 
-3.1. Sử dụng Notepad ++ để tạo file có tên là wpa-supplicant.conf trong thư mục boot của thẻ nhớ
+3.1. Sử dụng Notepad ++ để tạo file có tên là wpa_supplicant.conf trong thư mục boot của thẻ nhớ
 
 3.2. Set định dạng File
 Định dạng file Unix (Edit -> EOL converion -> UNIX/OSX Format là Unix (LF)), nội dung là các tham số tên SSID và mật khẩu tương ứng
